@@ -1,4 +1,4 @@
 .button{
-    background-color: #ccc;
-    color: red;
+    cursor: pointer;
+    background: transparent;
 }
