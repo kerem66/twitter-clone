@@ -5,7 +5,7 @@ import Button from "./button";
 
 function ThemeButton({ className, children,big=false, ...props }) {
   return (
-    <Button className={cn(styles.button,big&& styles.bigButton, className)} {...props}>
+    <Button className={cn(styles.button,big&& styles.bigButton, className)} {...props} >
       {children}
     </Button>
   );

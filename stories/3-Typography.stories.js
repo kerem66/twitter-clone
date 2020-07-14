@@ -9,6 +9,6 @@ export default {
 export const Title = () => (
   <div>
     <TextTitle>Merhaba Dünya Bold</TextTitle>
-    <TextTitle bold={false}>Merhaba Dünya not bold</TextTitle>
+    <TextTitle bold={false}>Merhaba Dünya not bold </TextTitle>
   </div>
 );

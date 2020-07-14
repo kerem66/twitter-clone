@@ -42,4 +42,4 @@ export const Icon = () => (
 );
 
 export const ProfilePhoto= () => <Photo/>
-export const Box= () => <ProfileBox/>
+export const Box= () =>  <ProfileBox/>

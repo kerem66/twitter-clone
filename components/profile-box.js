@@ -14,7 +14,7 @@ function ProfileBox({ slug = "keremharman66", name = "Kerem Harman" }) {
         <TextBody bold>{name}</TextBody>
         <TextBody className={styles.slug}>@{slug}</TextBody>
       </div>
-      <ArrowBottom className={styles.icon} />
+      <ArrowBottom className={styles.icon}/>
     </Button>
   );
 }

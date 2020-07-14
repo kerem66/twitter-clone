@@ -12,7 +12,7 @@ export default {
 };
 
 export const NormalButton = () => <Button>Save</Button>;
-export const Theme = () => <Stack column>
+export const Theme = () => <Stack column >
     <ThemeButton>Save</ThemeButton>
     <ThemeButton full>Save Full</ThemeButton>
     <ThemeButton full big>Save Big Button</ThemeButton>

@@ -8,7 +8,7 @@ font-weight:bold;
 
   &:hover {
      background-color: var(--c-theme);
-     color: var(--c-text-color);
+     color : var(--c-text-color);
  }
 }
 
