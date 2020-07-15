@@ -1,7 +1,11 @@
 .body {
-    font-size: 19px;
+    font-size: 16px;
     color: var(--c-text-color);
 }
 .bold {
     font-weight : bold;
+}
+
+.lighter{
+    color: var(--c-gray);
 }

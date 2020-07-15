@@ -12,7 +12,7 @@ function ProfileBox({ slug = "keremharman66", name = "Kerem Harman" }) {
       <Photo />
       <div className={styles.body}>
         <TextBody bold>{name}</TextBody>
-        <TextBody className={styles.slug}>@{slug}</TextBody>
+        <TextBody className={styles.slug} lighter>@{slug}</TextBody>
       </div>
       <ArrowBottom className={styles.icon}/>
     </Button>

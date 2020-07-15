@@ -14,7 +14,7 @@ import {
   More,
 } from "./icons";
 
-function Navigation({ selectedKey }) {
+function Navigation({ flat=false,selectedKey }) {
   return (
     <nav className={styles.nav}>
       <NavigationButton>
