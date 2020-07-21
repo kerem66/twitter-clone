@@ -19,7 +19,7 @@ export default {
 export const MENU = [
     {
         key: "home",
-        path: "/home",
+        path: "/",
         icon: <Home />,
         iconSelected: <HomeFill />,
         title: "Home",
