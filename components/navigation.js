@@ -1,83 +1,19 @@
 import React from "react";
+
+import {MENU} from "../constants";
 import styles from "./navigation.module.css";
+
 import NavigationButton from "./navigation-button";
 import TextTitle from "./text-title";
-import {
-  Twitter,
-  Home,
-  Explore,
-  Notification,
-  Messages,
-  Bookmark,
-  Lists,
-  Profile,
-  More, HomeFill, ExplorerFill, NotificationFill, MessagesFill, BookmarkFill, ListsFill, ProfileFill,
-} from "./icons";
+import { Twitter} from "./icons";
 
-const MENU = [
-  {
-    key: "home",
-    icon: <Home />,
-    iconSelected: <HomeFill />,
-    title: "Home",
-    notify: 0,
-  },
-  {
-    key: "explore",
-    icon: <Explore />,
-    iconSelected: <ExplorerFill />,
-    title: "Explore",
-    notify: 0,
-  },
-  {
-    key: "notifications",
-    icon: <Notification />,
-    iconSelected: <NotificationFill />,
-    title: "Notifications",
-    notify: 17,
-  },
-  {
-    key: "messages",
-    icon: <Messages />,
-    iconSelected: <MessagesFill />,
-    title: "Messages",
-    notify: 0,
-  },
-  {
-    key: "bookmarks",
-    icon: <Bookmark />,
-    iconSelected: <BookmarkFill />,
-    title: "Bookmarks",
-    notify: 0,
-  },
-  {
-    key: "lists",
-    icon: <Lists />,
-    iconSelected: <ListsFill />,
-    title: "Lists",
-    notify: 0,
-  },
-  {
-    key: "profile",
-    icon: <Profile />,
-    iconSelected: <ProfileFill />,
-    title: "Profile",
-    notify: 0,
-  },
-  {
-    key: "more",
-    icon: <More />,
-    iconSelected: <More />,
-    title: "More",
-    notify: 0,
-  },
-];
+
 
 function Navigation({ flat = false, selectedKey = "home" }) {
   return (
     <nav className={styles.nav}>
       <NavigationButton>
-        <Twitter />
+        <Twitter style={{fontSize:30}} />
       </NavigationButton>
 
       {MENU.map((menu) => {
