@@ -7,7 +7,7 @@ import {
     Messages,
     MessagesFill, More,
     Notification,
-    NotificationFill, Profile, ProfileFill
+    NotificationFill, Profile, ProfileFill,Twitter
 } from "../components/icons";
 import React from "react";
 
@@ -17,6 +17,14 @@ export default {
 }
 
 export const MENU = [
+    {
+        key: 'twitter',
+        path: '/',
+        icon: <Twitter style={{ fontSize: 30 }} />,
+        iconSelected: <Twitter style={{ fontSize: 30 }} />,
+        title: '',
+        notify: 0
+    },
     {
         key: "home",
         path: "/",

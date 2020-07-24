@@ -1,12 +1,12 @@
 import React from "react";
 import {useRouter} from "next/router";
+import cn from "classnames";
 import {MENU} from "../constants";
 import styles from "./navigation.module.css";
 
 import NavigationButton from "./navigation-button";
 import TextTitle from "./text-title";
 import { Twitter} from "./icons";
-import {route} from "next/dist/next-server/server/router";
 
 
 
@@ -15,9 +15,9 @@ function Navigation({ flat = false }) {
 
     return (
     <nav className={styles.nav}>
-      <NavigationButton>
-        <Twitter style={{fontSize:30}} />
-      </NavigationButton>
+      {/*<NavigationButton>*/}
+      {/*  <Twitter style={{fontSize:30}} />*/}
+      {/*</NavigationButton>*/}
 
       {MENU.map((menu) => {
         const showTitle = !flat && menu.title.length > 0;
@@ -28,7 +28,7 @@ function Navigation({ flat = false }) {
             notify={menu.notify}
             selected={selected}
             href={menu.path}
-            className={styles.navbutton}
+            className={cn(styles.navbutton , menu.key)}
           >
             { selected ? menu.iconSelected : menu.icon}
             {showTitle && <TextTitle>{menu.title}</TextTitle>}
