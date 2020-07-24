@@ -17,7 +17,7 @@ function ProfileBox({
       {!flat && (
         <>
           <div className={styles.body}>
-            <TextBody bold>{name}</TextBody>
+            <TextBody bold start>{name}</TextBody>
             <TextBody className={styles.slug} lighter>
               @{slug}
             </TextBody>

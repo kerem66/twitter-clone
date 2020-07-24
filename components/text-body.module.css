@@ -9,3 +9,8 @@
 .lighter{
     color: var(--c-gray);
 }
+
+.start{
+    display: flex;
+    align-content: flex-start;
+}
