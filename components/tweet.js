@@ -28,23 +28,23 @@ function Tweet({ name, slug, datetime, text, children }) {
             <div className={styles.footerButton}>
                 <IconButton className={styles.actionButton}>
                     <Icon.Reply/>
-
+                    <span>12</span>
                 </IconButton>
-                <span>12</span>
+
             </div>
             <div className={styles.footerButton}>
-                <IconButton className={styles.actionButton}>
+                <IconButton className={styles.retweet}>
                     <Icon.Retweet/>
-
+                    <span>17</span>
                 </IconButton>
-                <span>17</span>
+
             </div>
             <div className={styles.footerButton}>
-                <IconButton className={styles.actionButton}>
+                <IconButton className={styles.like}>
                     <Icon.Like/>
-
+                    <span>128</span>
                 </IconButton>
-                <span>128</span>
+
             </div>
             <div className={styles.footerButton}>
                 <IconButton className={styles.actionButton}>
