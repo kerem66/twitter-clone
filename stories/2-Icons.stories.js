@@ -41,5 +41,5 @@ export const Icon = () => (
   </div>
 );
 
-export const ProfilePhoto= () => <Photo/>
-export const Box= () =>  <ProfileBox/>
+export const ProfilePhoto = () => <Photo />;
+export const Box = () => <ProfileBox />;
