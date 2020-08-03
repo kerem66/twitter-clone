@@ -29,19 +29,27 @@
   align-items: center;
 }
 
+
 .footerButton {
   flex: 1;
   display: flex;
   align-items: center;
-  color: var(--c-gray);
+  color: var(--c-gray) !important;
 
   &:first-child {
     margin-left: -8px;
   }
-  span {
+  > span {
     font-size: 0.9em;
-    padding-bottom: 2.5px;
-    padding-left: 8px;
+  }
+
+  .like:hover {
+    color: var(--c-like);
+    background-color: var(--c-like-10);
+  }
+  .retweet:hover {
+    color: var(--c-retweet);
+    background-color: var(--c-retweet-10);
   }
 }
 
@@ -59,20 +67,12 @@
   svg {
     font-size: 19px;
   }
-  &:hover {
-    color: var(--c-like);
-    background-color: var(--c-like-10);
-  }
 }
 .retweet {
   color: inherit;
 
   svg {
     font-size: 19px;
-  }
-  &:hover {
-    color: var(--c-retweet);
-    background-color: var(--c-retweet-10);
   }
 }
 

@@ -17,45 +17,43 @@ function Tweet({ name, slug, datetime, text, children }) {
       {/*body*/}
       <div className={styles.body}>
         <header className={styles.header}>
-            <span className={styles.name}>{name}</span>
-            <span className={styles.slug}>@{slug}</span>
-            <span className={styles.time}> · {dateFormat(datetime)}</span>
+          <span className={styles.name}>{name}</span>
+          <span className={styles.slug}>@{slug}</span>
+          <span className={styles.time}> · {dateFormat(datetime)}</span>
         </header>
 
         <div className={styles.content}>{text}</div>
 
         <footer className={styles.footer}>
-            <div className={styles.footerButton}>
-                <IconButton className={styles.actionButton}>
-                    <Icon.Reply/>
-                    <span>12</span>
-                </IconButton>
+          <div className={styles.footerButton}>
+            <IconButton className={styles.actionButton}>
+              <Icon.Reply />
+            </IconButton>
+            <span>12</span>
+          </div>
+          <div className={styles.footerButton}>
+            <IconButton className={styles.retweet}>
+              <Icon.Retweet />
+            </IconButton>
 
-            </div>
-            <div className={styles.footerButton}>
-                <IconButton className={styles.retweet}>
-                    <Icon.Retweet/>
-                    <span>17</span>
-                </IconButton>
-
-            </div>
-            <div className={styles.footerButton}>
-                <IconButton className={styles.like}>
-                    <Icon.Like/>
-                    <span>128</span>
-                </IconButton>
-
-            </div>
-            <div className={styles.footerButton}>
-                <IconButton className={styles.actionButton}>
-                    <Icon.Share/>
-                </IconButton>
-            </div>
-            <div className={styles.footerButton}>
-                <IconButton className={styles.actionButton}>
-                    <Icon.Question/>
-                </IconButton>
-            </div>
+            <span>17</span>
+          </div>
+          <div className={styles.footerButton}>
+            <IconButton className={styles.like}>
+              <Icon.Like />
+            </IconButton>
+            <span>128</span>
+          </div>
+          <div className={styles.footerButton}>
+            <IconButton className={styles.actionButton}>
+              <Icon.Share />
+            </IconButton>
+          </div>
+          <div className={styles.footerButton}>
+            <IconButton className={styles.actionButton}>
+              <Icon.Question />
+            </IconButton>
+          </div>
         </footer>
       </div>
       {children}
